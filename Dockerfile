@@ -1,5 +1,4 @@
-FROM Ubuntu:20200122
-WORKDIR home
+FROM ubuntu
 RUN apt update
-RUN apt-get install gcc build-essential gcc-multilib
-COPY .asm.cpp home
+RUN apt-get install -y gcc build-essential gcc-multilib
+COPY asm.c ./
